@@ -64,7 +64,7 @@ Create a target analysis folder and place the exported database data within it. 
 └── LICENSE         # Open source license
 ```
 
-```
+```shell
 python preprocess_data.py --input data/savedrecs1.txt --output data/processed_data.csv
 ```
 
@@ -116,7 +116,7 @@ if __name__ == "__main__":
 
 VOSviewer focuses on the construction and analysis of network maps, and the main metrics it outputs are as follows:
 
-(1) Node Metrics
+1. Node Metrics
 
 Size:
 
@@ -126,7 +126,7 @@ Color:
 
 Colors represent clusters, which are groups divided based on co-occurrence relationships or coupling strength.
 
-(2) Edge Weight (Links)
+2.  Edge Weight (Links)
 
 Link Strength:
 
@@ -136,7 +136,7 @@ Total Link Strength:
 
 Represents the total strength of connections between one node and all other nodes.
 
-(3) Output Files
+3. Output Files
 
 Map File: Contains data on the map, including nodes, edges, and cluster information.
 
@@ -154,25 +154,25 @@ Analyze node metrics and relationships further using the software's generated ta
 
 CiteSpace focuses on constructing scientific knowledge maps based on temporal dimensions, with metrics leaning more toward bibliometrics. The main metrics include:
 
-(1) Betweenness Centrality
+1. Betweenness Centrality
 
 Reflects the role of a node in connecting different sub-networks. A higher value indicates that the node serves as a significant bridge in the network.
 
 Often used to identify key authors, institutions, or keywords in a field.
 
-(2) Burstness
+2. Burstness
 
 Used to identify research hotspots or keywords with significant growth over a particular period.
 
 CiteSpace detects the "burst strength" (Strength) and duration (Start-End) of certain keywords or topics using algorithms.
 
-(3) Cluster Labels
+3. Cluster Labels
 
 Generated based on clustering analysis of keywords or citation content, providing thematic labels for each cluster.
 
 Typically created automatically by the software's algorithms.
 
-(4) Output Files
+4. Output Files
 
 Visual Maps: Generated image files displaying the network of nodes and links.
 
@@ -188,11 +188,11 @@ Use the "Export" function to save visual maps as images or .gexf files for furth
 
 ## 1.8 Process for Generating These Metrics
 
-(1) Data Import
+1.  Data Import
 
 Import Web of Science data files (savedrecs*.txt) and select the target node type (e.g., keywords, authors, institutions).
 
-(2) Set Analysis Parameters
+2. Set Analysis Parameters
 
 Adjust the analysis range (time windows, node filtering thresholds, etc.).
 
@@ -200,7 +200,7 @@ In VOSviewer, choose co-occurrence analysis or co-citation analysis.
 
 In CiteSpace, choose time slicing and burst detection.
 
-(3) Run Analysis and Output Results
+3. Run Analysis and Output Results
 
 VOSviewer:
 
